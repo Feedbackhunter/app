@@ -17,7 +17,6 @@
     <feature name="NetworkStatus">
         <param name="ios-package" value="CDVConnection" />
     </feature>
-    <gap:plugin name="cordova-plugin-x-toast" source="npm" />
     <feature name="Notification">
         <param name="ios-package" value="CDVNotification" />
     </feature>
