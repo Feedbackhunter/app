@@ -3,7 +3,7 @@ function onload(){
 }
 
 function checkConnection() {
-    window.plugins.toast.showLongBottom('Hello there!', function(a){console.log('toast success: ' + a)}, function(b){alert('toast error: ' + b)})
+    window.plugins.toast.show("haeiaehaeoihea", 'long', 'center');
 }
 function alertCallback(){
 

@@ -3,9 +3,8 @@ function onload(){
 }
 
 function checkConnection() {
-
-    navigator.notification.alert('hauheieauhiu', alertCallback, 'Ih rapaz', Ok);
+    window.plugins.toast.showLongBottom('Hello there!', function(a){console.log('toast success: ' + a)}, function(b){alert('toast error: ' + b)})
 }
 function alertCallback(){
-    
+
 }
