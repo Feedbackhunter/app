@@ -16,27 +16,13 @@ module.exports = [
         "clobbers": [
             "Connection"
         ]
-    },
-    {
-        "file": "plugins/cordova-plugin-x-toast/www/Toast.js",
-        "id": "cordova-plugin-x-toast.Toast",
-        "pluginId": "cordova-plugin-x-toast",
-        "clobbers": [
-            "window.plugins.toast"
-        ]
-    },
-    {
-        "file": "plugins/cordova-plugin-x-toast/test/tests.js",
-        "id": "cordova-plugin-x-toast.tests",
-        "pluginId": "cordova-plugin-x-toast"
     }
 ];
 module.exports.metadata = 
 // TOP OF METADATA
 {
     "cordova-plugin-network-information": "1.1.0",
-    "cordova-plugin-whitelist": "1.0.0",
-    "cordova-plugin-x-toast": "2.3.1"
+    "cordova-plugin-whitelist": "1.0.0"
 }
 // BOTTOM OF METADATA
 });

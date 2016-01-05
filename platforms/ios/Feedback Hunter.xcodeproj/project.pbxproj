@@ -43,8 +43,6 @@
 		A0AD4AE905E346108111C18D /* CDVReachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 253867818BC743B8A7D079E9 /* CDVReachability.m */; };
 		2A85F926262C4D3382C5EE9C /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 168C4D0BFB9A49E68146B9E9 /* SystemConfiguration.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		CFE2AA184FC049F5A0754761 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84E0403CE93840629337C0A8 /* QuartzCore.framework */; };
-		AE0A57DF05BC487FBD892CCA /* Toast+UIView.m in Sources */ = {isa = PBXBuildFile; fileRef = B76B1ADA4EE04A0F8F95D76A /* Toast+UIView.m */; };
-		076C26C2D0C44ED4A642852D /* Toast.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B89C3D18D6B406D96C1B8AC /* Toast.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -116,10 +114,6 @@
 		2645D966FD134620AE871828 /* CDVReachability.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "CDVReachability.h"; path = "cordova-plugin-network-information/CDVReachability.h"; sourceTree = "<group>"; fileEncoding = 4; };
 		168C4D0BFB9A49E68146B9E9 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "SystemConfiguration.framework"; path = "System/Library/Frameworks/SystemConfiguration.framework"; sourceTree = SDKROOT; fileEncoding = 4; };
 		84E0403CE93840629337C0A8 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "QuartzCore.framework"; path = "System/Library/Frameworks/QuartzCore.framework"; sourceTree = SDKROOT; fileEncoding = 4; };
-		B76B1ADA4EE04A0F8F95D76A /* Toast+UIView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "Toast+UIView.m"; path = "cordova-plugin-x-toast/Toast+UIView.m"; sourceTree = "<group>"; fileEncoding = 4; };
-		8B89C3D18D6B406D96C1B8AC /* Toast.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "Toast.m"; path = "cordova-plugin-x-toast/Toast.m"; sourceTree = "<group>"; fileEncoding = 4; };
-		5CB8BDACA05E45658E69EC85 /* Toast+UIView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Toast+UIView.h"; path = "cordova-plugin-x-toast/Toast+UIView.h"; sourceTree = "<group>"; fileEncoding = 4; };
-		B7BB57D6A9C143B0A8CE9312 /* Toast.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Toast.h"; path = "cordova-plugin-x-toast/Toast.h"; sourceTree = "<group>"; fileEncoding = 4; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -226,10 +220,6 @@
 				253867818BC743B8A7D079E9 /* CDVReachability.m */,
 				750F12ED472B4AED8A7A5031 /* CDVConnection.h */,
 				2645D966FD134620AE871828 /* CDVReachability.h */,
-				B76B1ADA4EE04A0F8F95D76A /* Toast+UIView.m */,
-				8B89C3D18D6B406D96C1B8AC /* Toast.m */,
-				5CB8BDACA05E45658E69EC85 /* Toast+UIView.h */,
-				B7BB57D6A9C143B0A8CE9312 /* Toast.h */,
 			);
 			name = Plugins;
 			path = "Feedback Hunter/Plugins";
@@ -416,8 +406,6 @@
 				302D95F114D2391D003F00A1 /* MainViewController.m in Sources */,
 				8D0DB6C2A1974B5C9AB96D73 /* CDVConnection.m in Sources */,
 				A0AD4AE905E346108111C18D /* CDVReachability.m in Sources */,
-				AE0A57DF05BC487FBD892CCA /* Toast+UIView.m in Sources */,
-				076C26C2D0C44ED4A642852D /* Toast.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
