@@ -12,8 +12,5 @@
             </intent-filter>
         </activity>
     </application>
-    <feature name="Toast">
-        <param name="android-package" value="nl.xservices.plugins.Toast" />
-    </feature>
     <uses-sdk android:minSdkVersion="14" android:targetSdkVersion="22" />
 </manifest>

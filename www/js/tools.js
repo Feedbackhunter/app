@@ -1,4 +1,3 @@
-
 function checkConnection() {
-    window.plugins.toast.show("haeiaehaeoihea", 'long', 'center');
+    $cordovaToast.show('Here is a message', 'long', 'center')
 }
