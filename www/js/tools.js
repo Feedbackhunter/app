@@ -1,3 +1,12 @@
 function checkConnection() {
-    window.plugins.toast.show("haeiaehaeoihea", 'long', 'center');
+    navigator.notification.confirm(
+    'You are the winner!', // message
+     onConfirm,            // callback to invoke with index of button pressed
+    'Game Over',           // title
+    ['Restart','Exit']     // buttonLabels
+    );
+}
+
+function onConfirm(){
+    
 }

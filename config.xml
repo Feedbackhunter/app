@@ -11,7 +11,6 @@
     <plugin name="cordova-plugin-whitelist" spec="1" />
     <preference name="orientation" value="portrait" />
     <preference name="fullscreen" value="false" />
-    <gap:plugin name="cordova-plugin-x-toast" source="npm" />
     <access origin="*" />
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />

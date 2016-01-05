@@ -8,6 +8,10 @@
         <param name="android-package" value="org.apache.cordova.whitelist.WhitelistPlugin" />
         <param name="onload" value="true" />
     </feature>
+    <gap:plugin name="cordova-plugin-x-toast" source="npm" />
+    <feature name="Notification">
+        <param name="android-package" value="org.apache.cordova.dialogs.Notification" />
+    </feature>
     <allow-intent href="market:*" />
     <name>Feedback Hunter</name>
     <description>
@@ -19,7 +23,6 @@
     <content src="index.html" />
     <preference name="orientation" value="portrait" />
     <preference name="fullscreen" value="false" />
-    <gap:plugin name="cordova-plugin-x-toast" source="npm" />
     <access origin="*" />
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
