@@ -15,6 +15,10 @@
                         {
                             "xml": "<feature name=\"Notification\"><param name=\"ios-package\" value=\"CDVNotification\" /></feature>",
                             "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"BarcodeScanner\"><param name=\"ios-package\" value=\"CDVBarcodeScanner\" /></feature>",
+                            "count": 1
                         }
                     ]
                 }
@@ -25,10 +29,13 @@
         "cordova-plugin-network-information": {
             "PACKAGE_NAME": "feedbackhunter.com"
         },
+        "cordova-plugin-dialogs": {
+            "PACKAGE_NAME": "feedbackhunter.com"
+        },
         "cordova-plugin-whitelist": {
             "PACKAGE_NAME": "feedbackhunter.com"
         },
-        "cordova-plugin-dialogs": {
+        "phonegap-plugin-barcodescanner": {
             "PACKAGE_NAME": "feedbackhunter.com"
         }
     },
@@ -58,11 +65,20 @@
             "merges": [
                 "navigator.notification"
             ]
+        },
+        {
+            "file": "plugins/phonegap-plugin-barcodescanner/www/barcodescanner.js",
+            "id": "phonegap-plugin-barcodescanner.BarcodeScanner",
+            "pluginId": "phonegap-plugin-barcodescanner",
+            "clobbers": [
+                "cordova.plugins.barcodeScanner"
+            ]
         }
     ],
     "plugin_metadata": {
         "cordova-plugin-network-information": "1.1.0",
-        "cordova-plugin-whitelist": "1.0.0",
-        "cordova-plugin-dialogs": "1.2.0"
+        "cordova-plugin-dialogs": "1.2.0",
+        "cordova-plugin-whitelist": "1.2.0",
+        "phonegap-plugin-barcodescanner": "4.1.0"
     }
 }

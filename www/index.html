@@ -15,9 +15,12 @@
 			<script src="assets/js/util.js"></script>
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="assets/js/main.js"></script>
+			<script type="text/javascript" src="cordova.js"></script>
+			<script type="text/javascript" src="js/index.js"></script>
 			<script src="js/tools.js"></script>
+			<script src="http://jsconsole.com/remote.js?25C8DF4D-1681-4211-9E56-51169FAF3FA9"></script>
 	</head>
-	<body>
+	<body >
 
 		<!-- Header -->
 			<section id="header">
@@ -38,7 +41,7 @@
 			</section>
 
 		<!-- Wrapper -->
-			<div id="wrapper">
+			<div id="wrapper" >
 
 				<!-- Main -->
 					<div id="main">
@@ -50,7 +53,7 @@
 										<h3>Avaliar</h3>
 									</header>
 									<center><p>Clique no botão Scannear e posicione o aparelho em frente ao qrCode do estabelecimento</p></center>
-									<a href="#" class="button special fit" onclick="checkConnection();">Scannear</a>
+									<a href="#" class="button special fit" onclick="scannear();">Scannear</a>
 									
 
 
@@ -65,5 +68,23 @@
 
 		
 
+
 	</body>
 </html>
+<script type="text/javascript">
+	document.addEventListener("deviceready", function () {
+      if (window.cordova) {
+        console.log('window.cordova is available');
+      } else {
+        console.log('window.cordova NOT available');
+      }
+    }, false);
+
+    document.addEventListener("deviceready", function () {
+      if (window.cordova && window.cordova.plugin) {
+        console.log('window.cordova.plugins is available');
+      } else {
+        console.log('window.cordova.plugins NOT available');
+      }
+    }, false);
+</script>

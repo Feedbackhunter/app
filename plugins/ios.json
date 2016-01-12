@@ -10,10 +10,13 @@
         "cordova-plugin-network-information": {
             "PACKAGE_NAME": "feedbackhunter.com"
         },
+        "cordova-plugin-dialogs": {
+            "PACKAGE_NAME": "feedbackhunter.com"
+        },
         "cordova-plugin-whitelist": {
             "PACKAGE_NAME": "feedbackhunter.com"
         },
-        "cordova-plugin-dialogs": {
+        "phonegap-plugin-barcodescanner": {
             "PACKAGE_NAME": "feedbackhunter.com"
         }
     },

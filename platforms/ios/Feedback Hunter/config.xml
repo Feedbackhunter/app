@@ -20,6 +20,9 @@
     <feature name="Notification">
         <param name="ios-package" value="CDVNotification" />
     </feature>
+    <feature name="BarcodeScanner">
+        <param name="ios-package" value="CDVBarcodeScanner" />
+    </feature>
     <allow-intent href="itms:*" />
     <allow-intent href="itms-apps:*" />
     <name>Feedback Hunter</name>
@@ -34,9 +37,14 @@
     <preference name="fullscreen" value="false" />
     <access origin="*" />
     <allow-intent href="http://*/*" />
+    <allow-navigation href="http://*/*" />
     <allow-intent href="https://*/*" />
     <allow-intent href="tel:*" />
     <allow-intent href="sms:*" />
     <allow-intent href="mailto:*" />
     <allow-intent href="geo:*" />
+    <allow-navigation href="http://feedbackhunter.com.br/*" />
+    <allow-navigation href="http://feedbackhunter.esy.es/*" />
+    <allow-navigation href="http://*.feedbackhunter.com.br/*" />
+    <allow-navigation href="http://*.feedbackhunter.esy.es/*" />
 </widget>
