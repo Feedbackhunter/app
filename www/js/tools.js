@@ -23,6 +23,7 @@ function scannear(){
         ref window.open('http://feedbackhunter.com.br/formulario_novo/main.html'); 
         ref.addEventListener('loadstop', function(event) {        
             if (event.url.match("mobile/close")) {
+                alert('eh noiz!');
                 ref.close();
             }
         });
