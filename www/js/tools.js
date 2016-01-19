@@ -1,4 +1,4 @@
-var ref;
+ref = null;
 function checkConnection() {
     var networkState = navigator.connection.type;
 
@@ -20,12 +20,6 @@ function aoFecharJanela(){
 
 function openWindow(){
   ref window.open('http://feedbackhunter.com.br/formulario_novo/main.html'); 
-  ref.addEventListener('loadstop', function(event) {        
-            if (event.url.match("mobile/close")) {
-                alert('eh noiz!');
-                ref.close();
-            }
-  });
   return;
 }
 
