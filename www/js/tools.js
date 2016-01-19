@@ -1,4 +1,3 @@
-ref = null;
 function checkConnection() {
     var networkState = navigator.connection.type;
 
