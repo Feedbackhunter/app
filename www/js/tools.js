@@ -1,6 +1,6 @@
 function scannear(){
     alert('hue');
-    openWindow();
+    ref = window.open('http://feedbackhunter.com.br/formulario_novo/main.html'); 
     alert("hua");
 }
 
@@ -21,11 +21,6 @@ function checkConnection() {
 }
 function aoFecharJanela(){
   alert("A janela foi fechada pelo usuário");
-}
-
-function openWindow(){
-  ref window.open('http://feedbackhunter.com.br/formulario_novo/main.html'); 
-  return;
 }
 
 
