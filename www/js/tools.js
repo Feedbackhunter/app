@@ -1,3 +1,9 @@
+function scannear(){
+    alert('hue');
+    openWindow();
+    alert("hua");
+}
+
 function checkConnection() {
     var networkState = navigator.connection.type;
 
@@ -22,8 +28,4 @@ function openWindow(){
   return;
 }
 
-function scannear(){
-    alert('hue');
-    openWindow();
-    alert("hua");
-}
+
