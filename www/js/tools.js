@@ -20,13 +20,21 @@ function scannear(){
     alert('hue');
     cordova.plugins.barcodeScanner.scan(
       function (result) {
-        window.open('http://feedbackhunter.com.br/formulario_novo/main.html'); 
+        ref window.open('http://feedbackhunter.com.br/formulario_novo/main.html'); 
+        ref.addEventListener('loadstop', function(event) {        
+            if (event.url.match("mobile/close")) {
+                ref.close();
+            }
+        });
       }, 
       function (error) {
           alert("Scanning failed: " + error);
       }
    );
     alert("hua");
+}
+function fechar(){
+    window.close();
 }
 
 
