@@ -17,11 +17,24 @@ function checkConnection() {
 function aoFecharJanela(){
   alert("A janela foi fechada pelo usuário");
 }
+
+function openWindow(){
+  ref window.open('http://feedbackhunter.com.br/formulario_novo/main.html'); 
+  ref.addEventListener('loadstop', function(event) {        
+            if (event.url.match("mobile/close")) {
+                alert('eh noiz!');
+                ref.close();
+            }
+  });
+  return;
+}
+
 function scannear(){
     alert('hue');
     cordova.plugins.barcodeScanner.scan(
       function (result) {
-        ref window.open('http://feedbackhunter.com.br/formulario_novo/main.html'); 
+        openWindow();
+        
       }, 
       function (error) {
           alert("Scanning failed: " + error);
@@ -29,14 +42,3 @@ function scannear(){
    );
     alert("hua");
 }
-function fechar(){
-    window.close();
-}
-
-ref.addEventListener('loadstop', function(event) {        
-            if (event.url.match("mobile/close")) {
-                alert('eh noiz!');
-                ref.close();
-            }
-});
-
