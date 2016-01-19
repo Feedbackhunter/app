@@ -1,3 +1,4 @@
+var ref;
 function checkConnection() {
     var networkState = navigator.connection.type;
 
@@ -21,12 +22,6 @@ function scannear(){
     cordova.plugins.barcodeScanner.scan(
       function (result) {
         ref window.open('http://feedbackhunter.com.br/formulario_novo/main.html'); 
-        ref.addEventListener('loadstop', function(event) {        
-            if (event.url.match("mobile/close")) {
-                alert('eh noiz!');
-                ref.close();
-            }
-        });
       }, 
       function (error) {
           alert("Scanning failed: " + error);
@@ -38,5 +33,10 @@ function fechar(){
     window.close();
 }
 
-
+ref.addEventListener('loadstop', function(event) {        
+            if (event.url.match("mobile/close")) {
+                alert('eh noiz!');
+                ref.close();
+            }
+});
 
