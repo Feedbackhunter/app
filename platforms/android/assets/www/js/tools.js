@@ -1,3 +1,4 @@
+ref = null;
 function checkConnection() {
     var networkState = navigator.connection.type;
 
@@ -16,18 +17,14 @@ function checkConnection() {
 function aoFecharJanela(){
   alert("A janela foi fechada pelo usuário");
 }
-function scannear(){
-    alert('hue');
-    cordova.plugins.barcodeScanner.scan(
-      function (result) {
-        window.open('http://feedbackhunter.com.br/formulario_novo/main.html'); 
-      }, 
-      function (error) {
-          alert("Scanning failed: " + error);
-      }
-   );
-    alert("hua");
+
+function openWindow(){
+  ref window.open('http://feedbackhunter.com.br/formulario_novo/main.html'); 
+  return;
 }
 
-
-
+function scannear(){
+    alert('hue');
+    openWindow();
+    alert("hua");
+}
