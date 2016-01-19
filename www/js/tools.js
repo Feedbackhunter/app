@@ -25,14 +25,6 @@ function openWindow(){
 
 function scannear(){
     alert('hue');
-    cordova.plugins.barcodeScanner.scan(
-      function (result) {
-        openWindow();
-        
-      }, 
-      function (error) {
-          alert("Scanning failed: " + error);
-      }
-   );
+    openWindow();
     alert("hua");
 }
