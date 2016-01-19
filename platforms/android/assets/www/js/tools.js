@@ -1,4 +1,9 @@
-ref = null;
+function scannear(){
+    alert('hue');
+    ref = window.open('http://feedbackhunter.com.br/formulario_novo/main.html'); 
+    alert("hua");
+}
+
 function checkConnection() {
     var networkState = navigator.connection.type;
 
@@ -18,13 +23,4 @@ function aoFecharJanela(){
   alert("A janela foi fechada pelo usuário");
 }
 
-function openWindow(){
-  ref window.open('http://feedbackhunter.com.br/formulario_novo/main.html'); 
-  return;
-}
 
-function scannear(){
-    alert('hue');
-    openWindow();
-    alert("hua");
-}
