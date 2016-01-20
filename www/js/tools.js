@@ -1,6 +1,11 @@
 function scannear(){
     alert('hue');
-    ref = window.open('http://feedbackhunter.com.br/formulario_novo/main.html'); 
+    var ref = window.open('http://feedbackhunter.com.br/formulario_novo/main.html'); 
+    ref.addEventListener('loadstop', function(event) {        
+        if (event.url.match("mobile/close")) {
+            ref.close();
+        }
+    });
     alert("hua");
 }
 
