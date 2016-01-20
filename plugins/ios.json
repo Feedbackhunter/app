@@ -18,6 +18,9 @@
         },
         "phonegap-plugin-barcodescanner": {
             "PACKAGE_NAME": "feedbackhunter.com"
+        },
+        "cordova-plugin-inappbrowser": {
+            "PACKAGE_NAME": "feedbackhunter.com"
         }
     },
     "dependent_plugins": {}

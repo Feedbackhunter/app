@@ -46,6 +46,21 @@ var app = {
 
         console.log('Received Event: ' + id);
     }
+    document.addEventListener("deviceready", function () {
+      if (window.cordova) {
+        console.log('window.cordova is available');
+      } else {
+        console.log('window.cordova NOT available');
+      }
+    }, false);
+
+    document.addEventListener("deviceready", function () {
+      if (window.cordova && window.cordova.plugins) {
+        console.log('window.cordova.plugins is available');
+      } else {
+        console.log('window.cordova.plugins NOT available');
+      }
+    }, false);
 };
 
 app.initialize();

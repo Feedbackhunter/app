@@ -55,6 +55,7 @@
 		BDDAF2A609104C9F8123D653 /* zxing-all-in-one.cpp in Resources */ = {isa = PBXBuildFile; fileRef = B6657E7632B14ED9827D3ABF /* zxing-all-in-one.cpp */; };
 		0EA10ECC70DB4341843321A8 /* scannerOverlay.xib in Resources */ = {isa = PBXBuildFile; fileRef = 344E4626246749029753D0BF /* scannerOverlay.xib */; };
 		30BC6CC91F774084B45AF5B7 /* CDVBarcodeScanner.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 16C5BD503DAB4F6ABA2F3E4A /* CDVBarcodeScanner.bundle */; };
+		6814B3F3F9F24F79877010B2 /* CDVInAppBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = 58611A154AD84542A2EBFA98 /* CDVInAppBrowser.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -140,6 +141,8 @@
 		2CECDD795094433AA98A463C /* zxing-all-in-one.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "zxing-all-in-one.h"; path = "phonegap-plugin-barcodescanner/zxing-all-in-one.h"; sourceTree = "<group>"; fileEncoding = 4; };
 		344E4626246749029753D0BF /* scannerOverlay.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = "scannerOverlay.xib"; path = "scannerOverlay.xib"; sourceTree = "<group>"; fileEncoding = 4; };
 		16C5BD503DAB4F6ABA2F3E4A /* CDVBarcodeScanner.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = "CDVBarcodeScanner.bundle"; path = "CDVBarcodeScanner.bundle"; sourceTree = "<group>"; };
+		58611A154AD84542A2EBFA98 /* CDVInAppBrowser.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "CDVInAppBrowser.m"; path = "cordova-plugin-inappbrowser/CDVInAppBrowser.m"; sourceTree = "<group>"; fileEncoding = 4; };
+		442117AC3F074EFD8E7CD8BA /* CDVInAppBrowser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "CDVInAppBrowser.h"; path = "cordova-plugin-inappbrowser/CDVInAppBrowser.h"; sourceTree = "<group>"; fileEncoding = 4; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -266,6 +269,8 @@
 				71C007FFC3444395A5BEE1F7 /* CDVBarcodeScanner.mm */,
 				B6657E7632B14ED9827D3ABF /* zxing-all-in-one.cpp */,
 				2CECDD795094433AA98A463C /* zxing-all-in-one.h */,
+				58611A154AD84542A2EBFA98 /* CDVInAppBrowser.m */,
+				442117AC3F074EFD8E7CD8BA /* CDVInAppBrowser.h */,
 			);
 			name = Plugins;
 			path = "Feedback Hunter/Plugins";
@@ -458,6 +463,7 @@
 				CB47E45C6FF3469AB29B2E1E /* CDVNotification.m in Sources */,
 				6C78DCBD4E0843079B212844 /* CDVBarcodeScanner.mm in Resources */,
 				BDDAF2A609104C9F8123D653 /* zxing-all-in-one.cpp in Resources */,
+				6814B3F3F9F24F79877010B2 /* CDVInAppBrowser.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

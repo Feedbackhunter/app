@@ -7,6 +7,7 @@
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<meta http-equiv="Content-Security-Policy" content="default-src 'self' feedbackhunter.com.br">
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.scrollzer.min.js"></script>
@@ -20,7 +21,7 @@
 			<script src="js/tools.js"></script>
 			<script src="http://jsconsole.com/remote.js?25C8DF4D-1681-4211-9E56-51169FAF3FA9"></script>
 	</head>
-	<body>
+	<body >
 
 		<!-- Header -->
 			<section id="header">
@@ -41,7 +42,7 @@
 			</section>
 
 		<!-- Wrapper -->
-			<div id="wrapper">
+			<div id="wrapper" >
 
 				<!-- Main -->
 					<div id="main">
@@ -71,3 +72,20 @@
 
 	</body>
 </html>
+<script type="text/javascript">
+	document.addEventListener("deviceready", function () {
+      if (window.cordova) {
+        console.log('window.cordova is available');
+      } else {
+        console.log('window.cordova NOT available');
+      }
+    }, false);
+
+    document.addEventListener("deviceready", function () {
+      if (window.cordova && window.cordova.plugins) {
+        console.log('window.cordova.plugins is available');
+      } else {
+        console.log('window.cordova.plugins NOT available');
+      }
+    }, false);
+</script>
